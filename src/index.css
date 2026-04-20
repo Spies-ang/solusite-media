@@ -747,3 +747,126 @@ footer.site-footer p {
   .process-step { border-right: none; border-bottom: 1px solid var(--line); }
   .process-step:last-child { border-bottom: none; }
 }
+
+/* ============ ENHANCEMENTS ============ */
+
+/* (1) Cursor-reactive hero glow */
+.hero-cursor-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 800px;
+  margin-left: -400px;
+  margin-top: -400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform, opacity;
+}
+.hero .container { z-index: 3; }
+.hero h1, .hero-meta, .hero-sub, .hero-actions, .hero-signature { position: relative; z-index: 3; }
+
+@media (max-width: 900px) {
+  .hero-cursor-glow { display: none; }
+}
+
+/* (2) Hero headline shimmer */
+@keyframes hero-shimmer {
+  0%   { background-position: -150% 0; }
+  22.5% { background-position: 250% 0; }   /* 1.8s of 8s = 22.5% */
+  100% { background-position: 250% 0; }
+}
+.hero h1 {
+  background-image: linear-gradient(
+    100deg,
+    var(--fg) 0%,
+    var(--fg) 40%,
+    rgba(255, 255, 255, 1) 50%,
+    var(--fg) 60%,
+    var(--fg) 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position: -150% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: fade-up 1s ease-out 0.1s backwards, hero-shimmer 8s linear 1.5s infinite;
+}
+.hero h1 em {
+  -webkit-text-fill-color: var(--accent);
+  color: var(--accent);
+}
+
+/* (3) Work item iframe hover preview */
+.work-item { overflow: visible; }
+.work-preview {
+  position: absolute;
+  top: 50%;
+  right: 110px;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 260px;
+  background: var(--bg-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.25), 0 12px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+  z-index: 50;
+}
+.work-item:hover .work-preview {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+.work-preview iframe {
+  width: 1140px;
+  height: 743px;
+  border: 0;
+  transform: scale(0.35);
+  transform-origin: top left;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .work-preview { display: none; }
+}
+
+/* (4) Live status ticker */
+.live-ticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+.live-ticker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+/* (5) Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 { animation: none; -webkit-text-fill-color: var(--fg); color: var(--fg); background: none; }
+  .hero-cursor-glow { display: none; }
+  .work-preview { display: none; }
+  .live-ticker-dot, .hero-meta-dot { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
