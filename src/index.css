@@ -8,6 +8,20 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Solusite Media palette */
+    --bg: 0 0% 4%;
+    --bg-2: 0 0% 8%;
+    --fg: 40 22% 95%;
+    --fg-dim: 40 5% 58%;
+    --fg-faint: 40 5% 35%;
+    --accent: 217 91% 60%;
+    --accent-glow: 217 91% 60% / 0.15;
+    --line: 40 22% 95% / 0.08;
+
+    --font-display: 'Fraunces', 'Instrument Serif', Georgia, serif;
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -100,6 +114,44 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    background: #0A0A0A;
+    color: #F5F3EE;
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Radial gradient accents */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.04) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* SVG noise grain overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.25'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 2;
+    mix-blend-mode: overlay;
+  }
+
+  #root {
+    position: relative;
+    z-index: 3;
+    min-height: 100vh;
   }
 }
