@@ -709,8 +709,11 @@ section {
 /* ============ FOOTER ============ */
 footer.site-footer {
   padding: 48px 32px;
+  margin-top: 80px;
   border-top: 1px solid var(--line);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 footer.site-footer p {
   font-family: var(--mono);
