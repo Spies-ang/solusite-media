@@ -19,8 +19,12 @@ const ContactSection = () => (
 
         <div className="contact-details">
           <div className="contact-detail">
-            <div className="contact-detail-label">Phone</div>
+            <div className="contact-detail-label">WhatsApp</div>
             <div className="contact-detail-value">+27 66 269 8553</div>
+          </div>
+          <div className="contact-detail">
+            <div className="contact-detail-label">Call</div>
+            <div className="contact-detail-value">+27 83 653 9823</div>
           </div>
           <div className="contact-detail">
             <div className="contact-detail-label">Email</div>
