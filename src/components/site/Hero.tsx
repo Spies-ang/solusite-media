@@ -61,17 +61,19 @@ const Hero = () => {
         <h1>
           Stop losing<br />
           customers to a<br />
-          <em>website you don't have.</em>
+          <em>boring website.</em>
           <span className="shimmer-overlay" aria-hidden="true">
             Stop losing<br />
             customers to a<br />
-            <em>website you don't have.</em>
+            <em>boring website.</em>
           </span>
         </h1>
 
         <p className="hero-sub">
           I build proper websites for South African service businesses — before you pay, at a fixed price, delivered in days. Not weeks. Not months.
         </p>
+
+        <p className="hero-signature">— built quietly, after hours, with care.</p>
 
         <div className="hero-actions">
           <a href="#contact" className="btn btn-primary">
@@ -81,8 +83,6 @@ const Hero = () => {
             See the work
           </a>
         </div>
-
-        <p className="hero-signature">— built quietly, after hours, with care.</p>
       </div>
     </section>
   );

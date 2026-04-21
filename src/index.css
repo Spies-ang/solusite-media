@@ -250,9 +250,8 @@ nav.site-nav {
 
 /* Hero signature line */
 .hero-signature {
-  position: absolute;
-  bottom: 48px;
-  right: 32px;
+  margin-top: 16px;
+  text-align: left;
   font-family: var(--serif);
   font-style: italic;
   font-size: 14px;
@@ -727,7 +726,7 @@ footer.site-footer p {
 @media (max-width: 900px) {
   .container { padding: 0 24px; }
   nav.site-nav { padding: 16px 24px; }
-  .hero-signature { position: static; margin-top: 48px; text-align: right; }
+  .hero-signature { margin-top: 16px; text-align: left; }
   .problem-grid { grid-template-columns: 1fr; }
   .work-intro { grid-template-columns: 1fr; gap: 32px; }
   .work-item { grid-template-columns: 50px 1fr 50px; gap: 16px; }
