@@ -5,7 +5,7 @@ const works = [
   { num: "002", name: "Lisa Rorich Architects", tag: "Architecture · Durban", url: "https://lisa-rorich-architects.lovable.app" },
   { num: "003", name: "Lat Wai Farm Venue", tag: "Event Venue · Cape Town", url: "https://lat-wai-farm-venue.lovable.app" },
   { num: "004", name: "Studentech Driver Training", tag: "Education · Durban", url: "https://studentechdrivertraining.lovable.app" },
-  { num: "005", name: "Ndibali Interior Designs", tag: "Interiors · Johannesburg", url: "https://ndibali-designs.lovable.app" },
+  { num: "005", name: "Blue Sky Interior Design", tag: "Interior Design · Johannesburg", url: "https://blue-sky-interior.lovable.app" },
   { num: "006", name: "CodeFlash Photography", tag: "Photography · Pretoria", url: "https://codeflash-photography.lovable.app" },
 ];
 
