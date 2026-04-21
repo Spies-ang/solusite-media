@@ -62,6 +62,11 @@ const Hero = () => {
           Stop losing<br />
           customers to a<br />
           <em>website you don't have.</em>
+          <span className="shimmer-overlay" aria-hidden="true">
+            Stop losing<br />
+            customers to a<br />
+            <em>website you don't have.</em>
+          </span>
         </h1>
 
         <p className="hero-sub">

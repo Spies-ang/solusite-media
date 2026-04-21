@@ -709,8 +709,11 @@ section {
 /* ============ FOOTER ============ */
 footer.site-footer {
   padding: 48px 32px;
+  margin-top: 80px;
   border-top: 1px solid var(--line);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 footer.site-footer p {
   font-family: var(--mono);
@@ -779,13 +782,19 @@ footer.site-footer p {
   100% { background-position: 250% 0; }
 }
 .hero h1 {
+  position: relative;
+  color: var(--fg);
+}
+.hero h1 em { color: var(--accent); }
+.hero h1 .shimmer-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
   background-image: linear-gradient(
     100deg,
-    var(--fg) 0%,
-    var(--fg) 40%,
-    rgba(255, 255, 255, 1) 50%,
-    var(--fg) 60%,
-    var(--fg) 100%
+    rgba(255, 255, 255, 0) 38%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 62%
   );
   background-size: 200% 100%;
   background-repeat: no-repeat;
@@ -794,12 +803,9 @@ footer.site-footer p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: fade-up 1s ease-out 0.1s backwards, hero-shimmer 8s linear 1.5s infinite;
+  animation: hero-shimmer 8s linear 1.5s infinite;
 }
-.hero h1 em {
-  -webkit-text-fill-color: var(--accent);
-  color: var(--accent);
-}
+.hero h1 .shimmer-overlay em { font-style: italic; font-family: var(--serif); }
 
 /* (3) Work item iframe hover preview */
 .work-item { overflow: visible; }
@@ -861,7 +867,8 @@ footer.site-footer p {
 
 /* (5) Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .hero h1 { animation: none; -webkit-text-fill-color: var(--fg); color: var(--fg); background: none; }
+  .hero h1 { color: var(--fg); }
+  .hero h1 .shimmer-overlay { display: none; }
   .hero-cursor-glow { display: none; }
   .work-preview { display: none; }
   .live-ticker-dot, .hero-meta-dot { animation: none; }
