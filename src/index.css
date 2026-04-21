@@ -864,7 +864,8 @@ footer.site-footer p {
 
 /* (5) Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .hero h1 { animation: none; -webkit-text-fill-color: var(--fg); color: var(--fg); background: none; }
+  .hero h1 { color: var(--fg); }
+  .hero h1 .shimmer-overlay { display: none; }
   .hero-cursor-glow { display: none; }
   .work-preview { display: none; }
   .live-ticker-dot, .hero-meta-dot { animation: none; }
