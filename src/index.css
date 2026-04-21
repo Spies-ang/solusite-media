@@ -782,21 +782,16 @@ footer.site-footer p {
   position: relative;
   color: var(--fg);
 }
-.hero h1::after {
-  content: attr(data-text);
+.hero h1 em { color: var(--accent); }
+.hero h1 .shimmer-overlay {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
   background-image: linear-gradient(
     100deg,
-    rgba(255, 255, 255, 0) 35%,
-    rgba(255, 255, 255, 0.55) 50%,
-    rgba(255, 255, 255, 0) 65%
+    rgba(255, 255, 255, 0) 38%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 62%
   );
   background-size: 200% 100%;
   background-repeat: no-repeat;
@@ -806,9 +801,8 @@ footer.site-footer p {
   -webkit-text-fill-color: transparent;
   color: transparent;
   animation: hero-shimmer 8s linear 1.5s infinite;
-  mix-blend-mode: screen;
 }
-.hero h1 em { color: var(--accent); }
+.hero h1 .shimmer-overlay em { font-style: italic; font-family: var(--serif); }
 
 /* (3) Work item iframe hover preview */
 .work-item { overflow: visible; }
