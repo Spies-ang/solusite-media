@@ -779,13 +779,24 @@ footer.site-footer p {
   100% { background-position: 250% 0; }
 }
 .hero h1 {
+  position: relative;
+  color: var(--fg);
+}
+.hero h1::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   background-image: linear-gradient(
     100deg,
-    var(--fg) 0%,
-    var(--fg) 40%,
-    rgba(255, 255, 255, 1) 50%,
-    var(--fg) 60%,
-    var(--fg) 100%
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 65%
   );
   background-size: 200% 100%;
   background-repeat: no-repeat;
@@ -794,12 +805,10 @@ footer.site-footer p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: fade-up 1s ease-out 0.1s backwards, hero-shimmer 8s linear 1.5s infinite;
+  animation: hero-shimmer 8s linear 1.5s infinite;
+  mix-blend-mode: screen;
 }
-.hero h1 em {
-  -webkit-text-fill-color: var(--accent);
-  color: var(--accent);
-}
+.hero h1 em { color: var(--accent); }
 
 /* (3) Work item iframe hover preview */
 .work-item { overflow: visible; }
