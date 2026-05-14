@@ -751,8 +751,8 @@ footer.site-footer p {
   .nav-cta { padding: 8px 12px; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; }
   nav.site-nav { padding: 12px 16px; gap: 8px; }
   .nav-brand { font-size: 11px; gap: 8px; }
-  .hero { padding: 88px 0 64px; min-height: auto; }
-  .hero-meta { margin-bottom: 28px; }
+  .hero { padding: 64px 0 48px; min-height: auto; justify-content: flex-start; }
+  .hero-meta { margin-bottom: 24px; margin-top: 0; }
   .hero-signature { display: none; }
 }
 
