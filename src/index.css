@@ -748,6 +748,12 @@ footer.site-footer p {
   .process-grid { grid-template-columns: 1fr; }
   .process-step { border-right: none; border-bottom: 1px solid var(--line); }
   .process-step:last-child { border-bottom: none; }
+  .nav-cta { padding: 8px 12px; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; }
+  nav.site-nav { padding: 12px 16px; gap: 8px; }
+  .nav-brand { font-size: 11px; gap: 8px; }
+  .hero { padding: 88px 0 64px; min-height: auto; }
+  .hero-meta { margin-bottom: 28px; }
+  .hero-signature { display: none; }
 }
 
 /* ============ ENHANCEMENTS ============ */
