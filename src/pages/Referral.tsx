@@ -1,5 +1,6 @@
 import Nav from "@/components/site/Nav";
 import Footer from "@/components/site/Footer";
+import { Helmet } from "react-helmet-async";
 
 const waHref =
   "https://wa.me/27662698553?text=" +
@@ -7,6 +8,16 @@ const waHref =
 
 const Referral = () => (
   <>
+    <Helmet>
+      <title>Refer & Earn R1,500 | Solusite Media — Web Design Pretoria</title>
+      <meta name="description" content="Refer a South African business to Solusite Media. If they sign up for a website build, we send you R1,500 cash. No catch, no cap." />
+      <link rel="canonical" href="https://www.solusitemedia.co.za/referral" />
+      <meta property="og:title" content="Refer & Earn R1,500 | Solusite Media" />
+      <meta property="og:description" content="Refer a business to Solusite Media. If they sign up, you get R1,500 cash. No catch, no cap." />
+      <meta property="og:url" content="https://www.solusitemedia.co.za/referral" />
+      <meta name="twitter:title" content="Refer & Earn R1,500 | Solusite Media" />
+      <meta name="twitter:description" content="Refer a business to Solusite Media. If they sign up, you get R1,500 cash." />
+    </Helmet>
     <Nav />
 
     <section className="hero">
