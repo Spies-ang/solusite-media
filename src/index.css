@@ -749,10 +749,10 @@ footer.site-footer p {
   .process-step { border-right: none; border-bottom: 1px solid var(--line); }
   .process-step:last-child { border-bottom: none; }
   .nav-cta { padding: 8px 12px; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; }
-  nav.site-nav { padding: 12px 16px; gap: 8px; }
   .nav-brand { font-size: 11px; gap: 8px; }
-  .hero { padding: 64px 0 48px; min-height: auto; justify-content: flex-start; }
-  .hero-meta { margin-bottom: 24px; margin-top: 0; }
+  nav.site-nav { padding: 8px 16px; gap: 8px; }
+  .hero { padding: 16px 0 40px; min-height: auto; justify-content: flex-start; }
+  .hero-meta { margin-bottom: 18px; margin-top: 0; }
   .hero-signature { display: none; }
 }
 
