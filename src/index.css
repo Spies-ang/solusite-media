@@ -140,11 +140,11 @@ nav.site-nav {
 
 /* ============ HERO ============ */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 120px 0 80px;
+  justify-content: flex-start;
+  padding: 56px 0 80px;
   position: relative;
 }
 
