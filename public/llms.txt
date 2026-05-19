@@ -1,0 +1,17 @@
+# Solusite Media
+
+> Independent web design studio in Pretoria, South Africa. Fixed-price websites for service businesses — built before you pay, delivered in days.
+
+Solusite Media is a one-person studio run by Ian Spies. We build complete working website demos for South African service businesses (architects, attorneys, B&Bs, driving schools, photographers, interior designers) before any money changes hands. Pricing is a flat R5,000 build plus R700/month for hosting, SEO, edits and support.
+
+## Pages
+
+- [Home](/): Overview of services, recent work, process, pricing, and contact.
+- [Refer & Earn](/referral): Referral programme — R1,500 cash for every referred business that signs up.
+
+## Contact
+
+- WhatsApp: +27 66 269 8553
+- Call: +27 83 653 9823
+- Email: solusitemedia@gmail.com
+- Based in: Pretoria, Gauteng, South Africa
