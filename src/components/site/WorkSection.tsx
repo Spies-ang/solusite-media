@@ -59,9 +59,9 @@ const WorkSection = () => {
   return (
     <section id="work">
       <div className="container">
-        <div className="section-label">
+        <h2 className="section-label" style={{ margin: 0 }}>
           <span>02 — Recent work</span>
-        </div>
+        </h2>
 
         <div className="work-intro">
           <div>

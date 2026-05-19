@@ -15,22 +15,22 @@ const ProcessSection = () => (
       <div className="process-grid">
         <div className="process-step">
           <span className="process-num">01</span>
-          <h4>I build a demo</h4>
+          <h3>I build a demo</h3>
           <p>Custom-designed for your business. Not a template. Real content, real layout, live link you can open on your phone.</p>
         </div>
         <div className="process-step">
           <span className="process-num">02</span>
-          <h4>You have a look</h4>
+          <h3>You have a look</h3>
           <p>No commitment. If it's not right, we move on. If it's the direction, we go to step three.</p>
         </div>
         <div className="process-step">
           <span className="process-num">03</span>
-          <h4>We sort the details</h4>
+          <h3>We sort the details</h3>
           <p>Your real photos, real pricing, real copy. Quick call or exchange. I rebuild it with your actual content.</p>
         </div>
         <div className="process-step">
           <span className="process-num">04</span>
-          <h4>Live in 2–3 days</h4>
+          <h3>Live in 2–3 days</h3>
           <p>Domain, hosting, email — all handled. You don't touch anything technical. It just works.</p>
         </div>
       </div>

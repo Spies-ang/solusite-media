@@ -50,17 +50,17 @@ const Referral = () => (
         <div className="process-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
           <div className="process-step">
             <span className="process-num">01 — Tell us</span>
-            <h4>Send the lead</h4>
+            <h3>Send the lead</h3>
             <p>Tell us about a business you think we'd be a fit for — name, contact, why they need a site.</p>
           </div>
           <div className="process-step">
             <span className="process-num">02 — We pitch</span>
-            <h4>We do the work</h4>
+            <h3>We do the work</h3>
             <p>We reach out, build them a demo, pitch them.</p>
           </div>
           <div className="process-step" style={{ borderRight: "none" }}>
             <span className="process-num">03 — You get paid</span>
-            <h4>R1,500 to you</h4>
+            <h3>R1,500 to you</h3>
             <p>If they sign up, you get R1,500 paid out within 7 days of their first invoice clearing.</p>
           </div>
         </div>

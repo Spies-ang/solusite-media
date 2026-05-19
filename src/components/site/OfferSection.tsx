@@ -18,7 +18,7 @@ const OfferSection = () => (
           </div>
 
           <div className="offer-right">
-            <h4>What's included</h4>
+            <h3>What's included</h3>
             <ul className="offer-list">
               <li><span className="offer-check">✓</span><span>Fully custom website designed around your business — not a template.</span></li>
               <li><span className="offer-check">✓</span><span>Mobile-optimised. Looks right on every device.</span></li>
