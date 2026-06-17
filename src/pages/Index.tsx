@@ -11,13 +11,15 @@ import Footer from "@/components/site/Footer";
 const Index = () => (
   <>
     <Nav />
-    <Hero />
-    <ProblemSection />
-    <WorkSection />
-    <ProcessSection />
-    <OfferSection />
-    <WhoForSection />
-    <ContactSection />
+    <main>
+      <Hero />
+      <ProblemSection />
+      <WorkSection />
+      <ProcessSection />
+      <OfferSection />
+      <WhoForSection />
+      <ContactSection />
+    </main>
     <Footer />
   </>
 );

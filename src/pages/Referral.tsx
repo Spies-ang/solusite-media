@@ -19,7 +19,7 @@ const Referral = () => (
       <meta name="twitter:description" content="Refer a business to Solusite Media. If they sign up, you get R1,500 cash." />
     </Helmet>
     <Nav />
-
+    <main>
     <section className="hero">
       <div className="container">
         <div className="hero-meta">
@@ -100,7 +100,7 @@ const Referral = () => (
         </div>
       </div>
     </section>
-
+    </main>
     <Footer />
   </>
 );
