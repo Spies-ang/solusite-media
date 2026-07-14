@@ -73,8 +73,6 @@ const Hero = () => {
           I build proper websites for South African service businesses — before you pay, at a fixed price, delivered in days. Not weeks. Not months.
         </p>
 
-        
-
         <div className="hero-actions">
           <a href="#contact" className="btn btn-primary">
             Talk to me <span className="btn-arrow">→</span>
