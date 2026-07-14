@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.solusitemedia.co.za/sitemap.xml
+Sitemap: https://solusitemedia.co.za/sitemap.xml

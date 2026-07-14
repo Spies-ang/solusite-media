@@ -11,10 +11,10 @@ const Referral = () => (
     <Helmet>
       <title>Refer & Earn R1,500 | Solusite Media — Web Design Pretoria</title>
       <meta name="description" content="Refer a South African business to Solusite Media. If they sign up for a website build, we send you R1,500 cash. No catch, no cap." />
-      <link rel="canonical" href="https://www.solusitemedia.co.za/referral" />
+      <link rel="canonical" href="https://solusitemedia.co.za/referral" />
       <meta property="og:title" content="Refer & Earn R1,500 | Solusite Media" />
       <meta property="og:description" content="Refer a business to Solusite Media. If they sign up, you get R1,500 cash. No catch, no cap." />
-      <meta property="og:url" content="https://www.solusitemedia.co.za/referral" />
+      <meta property="og:url" content="https://solusitemedia.co.za/referral" />
       <meta name="twitter:title" content="Refer & Earn R1,500 | Solusite Media" />
       <meta name="twitter:description" content="Refer a business to Solusite Media. If they sign up, you get R1,500 cash." />
     </Helmet>
