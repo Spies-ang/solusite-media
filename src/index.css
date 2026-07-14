@@ -248,16 +248,6 @@ nav.site-nav {
   transform: translateX(4px);
 }
 
-/* Hero signature line */
-.hero-signature {
-  margin-top: 16px;
-  text-align: left;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 14px;
-  color: var(--fg-faint);
-  animation: fade-up 1s ease-out 0.6s backwards;
-}
 
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(24px); }
