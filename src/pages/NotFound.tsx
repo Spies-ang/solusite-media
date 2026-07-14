@@ -15,10 +15,10 @@ const NotFound = () => {
         <title>Page Not Found | Solusite Media</title>
         <meta name="description" content="The page you're looking for doesn't exist. Head back to Solusite Media — web design in Pretoria." />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href={`https://www.solusitemedia.co.za${location.pathname}`} />
+        <link rel="canonical" href={`https://solusitemedia.co.za${location.pathname}`} />
         <meta property="og:title" content="Page Not Found | Solusite Media" />
         <meta property="og:description" content="The page you're looking for doesn't exist." />
-        <meta property="og:url" content={`https://www.solusitemedia.co.za${location.pathname}`} />
+        <meta property="og:url" content={`https://solusitemedia.co.za${location.pathname}`} />
       </Helmet>
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
