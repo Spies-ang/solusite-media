@@ -764,7 +764,7 @@ footer.site-footer p {
 @media (max-width: 900px) {
   .container { padding: 0 24px; }
   nav.site-nav { padding: 16px 24px; }
-  .hero-signature { margin-top: 16px; text-align: left; }
+  
   .problem-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
   .work-intro { grid-template-columns: 1fr; gap: 32px; }
@@ -792,7 +792,7 @@ footer.site-footer p {
   nav.site-nav { padding: 8px 16px; gap: 8px; }
   .hero { padding: 16px 0 40px; min-height: auto; justify-content: flex-start; }
   .hero-meta { margin-bottom: 18px; margin-top: 0; }
-  .hero-signature { display: none; }
+  
 }
 
 /* ============ ENHANCEMENTS ============ */
@@ -813,7 +813,7 @@ footer.site-footer p {
   will-change: transform, opacity;
 }
 .hero .container { z-index: 3; }
-.hero h1, .hero-meta, .hero-sub, .hero-actions, .hero-signature { position: relative; z-index: 3; }
+.hero h1, .hero-meta, .hero-sub, .hero-actions { position: relative; z-index: 3; }
 
 @media (max-width: 900px) {
   .hero-cursor-glow { display: none; }
