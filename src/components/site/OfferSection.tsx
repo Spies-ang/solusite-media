@@ -1,39 +1,64 @@
+const pricingOptions = [
+  {
+    heading: "Once-off",
+    price: "R5000",
+    priceSub: "",
+    details: [
+      "Pay R2500 to start, and R2500 once the site is done and you are happy",
+      "Free domain included",
+      "Professional email included",
+      "Your website live for a full year",
+    ],
+    cta: "Get started",
+    href: "#contact",
+  },
+  {
+    heading: "Monthly",
+    price: "R2500",
+    priceSub: "then R750 per month",
+    details: [
+      "R2500 to start, then R750 per month",
+      "Continue for as long as you like, month to month",
+    ],
+    cta: "Get started",
+    href: "#contact",
+  },
+];
+
 const OfferSection = () => (
   <section id="offer">
     <div className="container">
       <div className="section-label">
-        <span>04 — The numbers</span>
+        <span>04 — Pricing</span>
       </div>
 
-      <div className="offer-container">
-        <div className="offer-grid">
-          <div className="offer-left">
-            <h2>Fixed price.<br /><em>No surprises.</em></h2>
-            <p>Most agencies price by "how much do they look like they can pay." I don't. One flat number, split into two.</p>
-            <div className="offer-price">
-              <span className="offer-price-num">R5,000</span>
-              <span className="offer-price-label">Once-off build</span>
+      <div className="pricing-grid">
+        {pricingOptions.map((option) => (
+          <div className="pricing-card" key={option.heading}>
+            <div className="pricing-card-header">
+              <h3>{option.heading}</h3>
+              <div className="pricing-price">
+                <span className="pricing-price-num">{option.price}</span>
+                {option.priceSub && (
+                  <span className="pricing-price-sub">{option.priceSub}</span>
+                )}
+              </div>
             </div>
-            <p className="offer-price-sub">R2,500 to start · R2,500 when you're happy · Then R700/month for everything else.</p>
-          </div>
 
-          <div className="offer-right">
-            <h3>What's included</h3>
-            <ul className="offer-list">
-              <li><span className="offer-check">✓</span><span>Fully custom website designed around your business — not a template.</span></li>
-              <li><span className="offer-check">✓</span><span>Mobile-optimised. Looks right on every device.</span></li>
-              <li><span className="offer-check">✓</span><span>Free domain + professional email setup.</span></li>
-              <li><span className="offer-check">✓</span><span>Google-ready so you start showing up in local search.</span></li>
-              <li><span className="offer-check">✓</span><span>Unlimited edits during the build. First month of maintenance free.</span></li>
-              <li><span className="offer-check">✓</span><span>R700/month after — hosting, SEO, edits, updates, support.</span></li>
+            <ul className="pricing-list">
+              {option.details.map((detail, i) => (
+                <li key={i}>
+                  <span className="pricing-check">✓</span>
+                  <span>{detail}</span>
+                </li>
+              ))}
             </ul>
 
-            <div className="offer-guarantee">
-              <strong>No-risk guarantee</strong>
-              You only pay the second R2,500 when you're completely happy with the final site. No lock-in on the monthly — cancel any time.
-            </div>
+            <a href={option.href} className="btn btn-primary pricing-cta">
+              {option.cta} <span className="btn-arrow">→</span>
+            </a>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   </section>
