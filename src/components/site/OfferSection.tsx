@@ -14,10 +14,12 @@ const pricingOptions = [
   },
   {
     heading: "Monthly",
-    price: "R2500",
-    priceSub: "then R750 per month",
+    price: "R750",
+    priceSub: "per month",
     details: [
-      "R2500 to start, then R750 per month",
+      "R2500 to start",
+      "Free domain included",
+      "Professional email included",
       "Continue for as long as you like, month to month",
     ],
     cta: "Get started",

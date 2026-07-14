@@ -673,7 +673,7 @@ section {
 }
 .pricing-price-sub {
   font-family: var(--serif);
-  font-size: 17px;
+  font-size: 14px;
   color: var(--fg-dim);
   font-style: italic;
 }
