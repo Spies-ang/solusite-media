@@ -65,7 +65,7 @@ const WorkSection = () => {
 
         <div className="work-intro">
           <div>
-            <div className="work-count">20+</div>
+            <div className="work-count">80+</div>
             <div className="work-count-label">Sites built for SA businesses</div>
           </div>
           <p className="work-intro-text">
