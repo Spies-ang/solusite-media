@@ -766,6 +766,7 @@ footer.site-footer p {
   nav.site-nav { padding: 16px 24px; }
   .hero-signature { margin-top: 16px; text-align: left; }
   .problem-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
   .work-intro { grid-template-columns: 1fr; gap: 32px; }
   .work-item { grid-template-columns: 50px 1fr 50px; gap: 16px; }
   .work-item .work-tag { display: none; }
