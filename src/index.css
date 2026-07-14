@@ -434,6 +434,44 @@ section {
   transform: translateX(6px);
 }
 
+/* ============ REVIEWS SECTION ============ */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.review-card {
+  padding: 36px 28px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+.review-card:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-4px);
+}
+.review-quote {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--fg-dim);
+  margin-bottom: 24px;
+}
+.review-source {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fg);
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
 /* ============ PROCESS SECTION ============ */
 .process-grid {
   display: grid;
