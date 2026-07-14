@@ -54,7 +54,7 @@ const Hero = () => {
           <span>Independent Web Developer · Pretoria, South Africa</span>
           <span className="live-ticker">
             <span className="live-ticker-dot" />
-            <span>Last site shipped less than 8 hours ago</span>
+            <span>Last site shipped: 13 hours ago</span>
           </span>
         </div>
 
