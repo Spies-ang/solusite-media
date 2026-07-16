@@ -44,7 +44,7 @@ const PricingGuide = () => (
             name: "How much does a website cost in South Africa?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A small-business website in South Africa typically costs between R2,500 and R25,000 once-off. Freelancers sit at R3,000–R15,000, boutique studios at R10,000–R30,000, and agencies at R25,000 and up. Solusite Media builds a full site for a fixed R5,000.",
+              text: "A small-business website in South Africa typically costs between R2,500 and R25,000 once-off. Freelancers sit at R3,000–R15,000, boutique studios at R10,000–R30,000, and agencies at R25,000 and up. Solusite Media builds a full site for a fixed R6,500.",
             },
           },
           {
