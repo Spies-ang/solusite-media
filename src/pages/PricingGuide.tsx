@@ -245,7 +245,7 @@ const PricingGuide = () => (
             </div>
             <div className="process-step" style={{ borderRight: "none" }}>
               <h3>What's the cheapest way to get a real website?</h3>
-              <p>A one-page site from an independent SA developer — R3,000–R5,000 once-off. Skip DIY builders if you value your time; you'll spend the equivalent in hours.</p>
+              <p>A one-page site from an independent SA developer — R3,000–R6,500 once-off. Skip DIY builders if you value your time; you'll spend the equivalent in hours.</p>
             </div>
             <div className="process-step" style={{ borderRight: "none" }}>
               <h3>Is WordPress cheaper than a custom-built site?</h3>
