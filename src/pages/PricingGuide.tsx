@@ -44,7 +44,7 @@ const PricingGuide = () => (
             name: "How much does a website cost in South Africa?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A small-business website in South Africa typically costs between R2,500 and R25,000 once-off. Freelancers sit at R3,000–R15,000, boutique studios at R10,000–R30,000, and agencies at R25,000 and up. Solusite Media builds a full site for a fixed R5,000.",
+              text: "A small-business website in South Africa typically costs between R2,500 and R25,000 once-off. Freelancers sit at R3,000–R15,000, boutique studios at R10,000–R30,000, and agencies at R25,000 and up. Solusite Media builds a full site for a fixed R6,500.",
             },
           },
           {
@@ -121,7 +121,7 @@ const PricingGuide = () => (
             <div className="process-step">
               <span className="process-num">R3,000 – R8,000</span>
               <h3>Independent SA developer</h3>
-              <p>The sweet spot for most service businesses. A proper custom site, mobile-friendly, with real copy about your business. This is where Solusite Media sits — <strong>R5,000 fixed</strong>, built before you pay a cent, domain and email included.</p>
+              <p>The sweet spot for most service businesses. A proper custom site, mobile-friendly, with real copy about your business. This is where Solusite Media sits — <strong>R6,500 fixed</strong>, built before you pay a cent, domain and email included.</p>
             </div>
             <div className="process-step">
               <span className="process-num">R10,000 – R30,000</span>
@@ -198,9 +198,9 @@ const PricingGuide = () => (
           <div className="pricing-grid">
             <div className="pricing-card">
               <div className="pricing-tag">Once-off</div>
-              <div className="pricing-price">R5,000</div>
+              <div className="pricing-price">R6,500</div>
               <ul className="pricing-list">
-                <li>R2,500 to start, R2,500 once you're happy</li>
+                <li>Pay R2,500 to start and the rest once the site is done and you are happy</li>
                 <li>Free domain (.co.za) included</li>
                 <li>Professional email included</li>
                 <li>Site live for a full year</li>
@@ -245,7 +245,7 @@ const PricingGuide = () => (
             </div>
             <div className="process-step" style={{ borderRight: "none" }}>
               <h3>What's the cheapest way to get a real website?</h3>
-              <p>A one-page site from an independent SA developer — R3,000–R5,000 once-off. Skip DIY builders if you value your time; you'll spend the equivalent in hours.</p>
+              <p>A one-page site from an independent SA developer — R3,000–R6,500 once-off. Skip DIY builders if you value your time; you'll spend the equivalent in hours.</p>
             </div>
             <div className="process-step" style={{ borderRight: "none" }}>
               <h3>Is WordPress cheaper than a custom-built site?</h3>

@@ -1,10 +1,10 @@
 const pricingOptions = [
   {
     heading: "Once-off",
-    price: "R5000",
+    price: "R6500",
     priceSub: "",
     details: [
-      "Pay R2500 to start, and R2500 once the site is done and you are happy",
+      "Pay R2500 to start and the rest once the site is done and you are happy",
       "Free domain included",
       "Professional email included",
       "Your website live for a full year",
