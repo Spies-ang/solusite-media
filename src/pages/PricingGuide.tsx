@@ -121,7 +121,7 @@ const PricingGuide = () => (
             <div className="process-step">
               <span className="process-num">R3,000 – R8,000</span>
               <h3>Independent SA developer</h3>
-              <p>The sweet spot for most service businesses. A proper custom site, mobile-friendly, with real copy about your business. This is where Solusite Media sits — <strong>R5,000 fixed</strong>, built before you pay a cent, domain and email included.</p>
+              <p>The sweet spot for most service businesses. A proper custom site, mobile-friendly, with real copy about your business. This is where Solusite Media sits — <strong>R6,500 fixed</strong>, built before you pay a cent, domain and email included.</p>
             </div>
             <div className="process-step">
               <span className="process-num">R10,000 – R30,000</span>
