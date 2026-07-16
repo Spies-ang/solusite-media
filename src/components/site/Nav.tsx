@@ -7,7 +7,7 @@ const Nav = () => {
     <nav className="site-nav">
       <Link to="/" className="nav-brand" style={{ textDecoration: "none", color: "inherit" }}>
         <div className="nav-diamond" />
-        <span>SOLUSITE</span>
+        <span>SOLUSITE MEDIA</span>
         <span style={{ color: "var(--fg-faint)" }}>— Ian Spies</span>
       </Link>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
