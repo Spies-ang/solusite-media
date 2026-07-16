@@ -198,9 +198,9 @@ const PricingGuide = () => (
           <div className="pricing-grid">
             <div className="pricing-card">
               <div className="pricing-tag">Once-off</div>
-              <div className="pricing-price">R5,000</div>
+              <div className="pricing-price">R6,500</div>
               <ul className="pricing-list">
-                <li>R2,500 to start, R2,500 once you're happy</li>
+                <li>Pay R2,500 to start and the rest once the site is done and you are happy</li>
                 <li>Free domain (.co.za) included</li>
                 <li>Professional email included</li>
                 <li>Site live for a full year</li>
